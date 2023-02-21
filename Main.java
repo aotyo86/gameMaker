@@ -7,9 +7,9 @@ public class Main{
         s1.suffix = 'A';
         Slime s2 = new Slime();
         s2.suffix = 'B';
-        Sword ken = new Sword("銅の剣");
+        Sword ken = new Sword("銅の剣",3);
         h.sword = ken;
-        Sword ken2 = new Sword("鉄の剣");
+        Sword ken2 = new Sword("鉄の剣",5);
         sm.sword = ken2;
         Stick st = new Stick("木の杖");
         w.stick = st;
@@ -17,9 +17,9 @@ public class Main{
         System.out.println(w.name+"は"+w.stick.name+"を装備している。");
         System.out.println(h.hp);
 
-        h.attack();
+        h.attack(s1);
         s1.attack();
         w.castSpell(h);
-        sm.attack();
+        sm.attack(s2);
     }
 }
