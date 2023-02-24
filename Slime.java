@@ -1,19 +1,30 @@
-public class Slime {
-    String name = "スライム";
-    final int level = 1;
-    int money = 5;
-    int exp = 5;
-    int power = 5;
-    int protect = 5;
-    int speed = 5;
-    int mazic = 0;
-    int hp = 8;
-    int mp = 0;
-    char suffix;
-    public void attack(){
-        System.out.println(this.name+"はこうげきした。");
+public class Slime extends Enemy{
+
+    public Slime(){
+        name = "スライム";
+        level = 1;
+        money = 5;
+        exp = 5;
+        power = 5;
+        protect = 5;
+        speed = 5;
+        mazic = 0;
+        hp = 8;
+        mp = 0;
     }
-    public void flee(){
+
+    public Slime(char c){
+        name = "スライム";
+        level = 1;
+        money = 5;
+        exp = 5;
+        power = 5;
+        protect = 5;
+        speed = 5;
+        mazic = 0;
+        hp = 8;
+        mp = 0;
+        suffix = c;
     }
 }
 

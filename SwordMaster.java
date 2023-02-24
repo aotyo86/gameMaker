@@ -3,7 +3,7 @@ public class SwordMaster extends Hero{
         System.out.println("敵のステータス");
     }
     @Override
-    public void attack(Slime s){
+    public void attack(Enemy s){
         int attackP = this.power + sword.sharpness;
         int damage = (attackP-s.protect)*2;
         s.hp -= damage;
