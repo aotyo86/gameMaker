@@ -10,12 +10,12 @@ public class Hero {
     int hp;
     int mp;
     Sword sword;
-    int attackP = this.power + this.sword.sharpness;
 
     public void attack(Slime s){
+        int attackP = this.power + sword.sharpness;
         int damage = attackP - s.protect;
         s.hp -= damage;
-        System.out.println(this.name+"は"+this.sword.name+"でこうげきした");
+        System.out.println(this.name+"は"+sword.name+"でこうげきした");
         System.out.println(s.name+"に"+damage+"のダメージ");
         System.out.println(s.name+"の残り体力は"+s.hp);
     }
@@ -41,8 +41,4 @@ public class Hero {
         this.hp = 20;
         this.mp = 10;
     }
-    public Hero(){
-        this("ダミー");
-    }
-
 }
